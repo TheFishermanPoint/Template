@@ -92,11 +92,11 @@ header h1 {
 }
 
 header address {
-    float: left;
-    font-size: 1;
-    font-style: normal;
-    line-height: 1.25;
-    margin: 1em 1em 1em 0;
+  float: left;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1.25;
+  margin: 1em 1em 1em 0;
 }
 
 header span,
