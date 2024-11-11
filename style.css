@@ -34,26 +34,27 @@ span[contenteditable] {
 
 /* heading */
 h1 {
-    font: bold 100% sans-serif;
+    font: bold 80% sans-serif; /* Reducir el tamaño de la fuente */
     letter-spacing: 0.5em;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 1em; /* Añadido para espacio después del título */
+    margin-bottom: 1em; /* Espacio después del título */
 }
 
 /* table */
 table {
-    font-size: 75%;
+    font-size: 60%; /* Reducir el tamaño de la fuente en la tabla */
     table-layout: fixed;
     width: 100%;
-    border-collapse: collapse; /* Añadido para evitar problemas de bordes en algunas situaciones */
+    border-collapse: collapse;
 }
 
 th, td {
-    border: 1px solid #000; /* Añadido un borde sólido para todas las celdas */
-    padding: 0.5em;
+    border: 1px solid #000; /* Borde sólido para todas las celdas */
+    padding: 0.3em; /* Reducir el padding */
     position: relative;
     text-align: left;
+    font-size: 0.8em; /* Reducir el tamaño de la fuente en las celdas */
 }
 
 th {
@@ -62,7 +63,7 @@ th {
 
 /* page */
 html {
-    font: 16px/1 'Open Sans', sans-serif;
+    font: 12px/1 'Open Sans', sans-serif; /* Reducir el tamaño de la fuente global */
     overflow: auto;
     padding: 0.5in;
     background: #999;
@@ -72,15 +73,15 @@ html {
 body {
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 0.5in;
+    padding: 0.2in; /* Reducir el padding superior para mover el contenido hacia arriba */
     background: #FFF;
     box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5);
 }
 
 /* header */
 header {
-    margin: 0 0 3em;
-    overflow: hidden; /* Añadido para manejar el colapso del margen superior */
+    margin: -1em 0 3em; /* Mover el cuadro más arriba */
+    overflow: hidden; /* Manejar el colapso del margen superior */
 }
 
 header h1 {
@@ -104,8 +105,8 @@ header img {
     display: block;
     float: right;
     margin: 1em 0 1em 1em;
-    max-height: 25%;
-    max-width: 60%;
+    max-height: 15%; /* Reducir el tamaño máximo de las imágenes */
+    max-width: 50%; /* Reducir el ancho máximo de los elementos flotantes */
     position: relative;
 }
 
@@ -130,7 +131,7 @@ article,
 article address,
 table.meta,
 table.inventory {
-    margin: 0 0 3em;
+    margin: 0 0 2em; /* Reducir el margen inferior */
     clear: both;
 }
 
@@ -183,12 +184,30 @@ table.inventory td {
     text-align: right;
 }
 
-table { font-size: 75%; table-layout: fixed; width: 100%; }
-table { border-collapse: separate; border-spacing: 2px; }
-th, td { border-width: 1px; padding: 0.5em; position: relative; text-align: left; }
-th, td { border-radius: 0.25em; border-style: solid; }
-th { background: #EEE; border-color: #BBB; }
-td { border-color: #DDD; }
+table { 
+    font-size: 60%; /* Reducir el tamaño de la fuente dentro de las tablas */
+    table-layout: fixed; 
+    width: 100%; 
+    border-collapse: separate; 
+    border-spacing: 2px; 
+}
+th, td { 
+    border-width: 1px; 
+    padding: 0.3em; /* Reducir el padding */
+    position: relative; 
+    text-align: left; 
+}
+th, td { 
+    border-radius: 0.25em; 
+    border-style: solid; 
+}
+th { 
+    background: #EEE; 
+    border-color: #BBB; 
+}
+td { 
+    border-color: #DDD; 
+}
 
 /* aside */
 aside h1 {
