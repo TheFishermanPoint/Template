@@ -290,3 +290,20 @@ tr:hover .cut {
 .small-text {
     font-size: 75%;
 }
+
+.pagos-lista {
+      margin-top: 20px;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .pagos-lista li {
+      padding: 8px;
+      border: 1px solid #ddd;
+      margin-bottom: 5px;
+      background-color: #f9f9f9;
+    }
+
+    .pagos-lista li span {
+      font-weight: bold;
+    }
