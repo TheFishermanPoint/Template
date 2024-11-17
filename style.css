@@ -292,18 +292,18 @@ tr:hover .cut {
 }
 
 .pagos-lista {
-      margin-top: 20px;
+      margin-top: 10px;
       list-style: none;
       padding-left: 0;
     }
 
-    .pagos-lista li {
+    .pagos-lista ul {
       padding: 8px;
       border: 1px solid #ddd;
       margin-bottom: 5px;
       background-color: #f9f9f9;
     }
 
-    .pagos-lista li span {
+    .pagos-lista ul span {
       font-weight: bold;
     }
